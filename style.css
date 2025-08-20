@@ -1,0 +1,113 @@
+/* Filter control styling */
+.amazon-filter-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: linear-gradient(to bottom, #f7f7f7, #fff);
+  justify-content: space-between;
+}
+
+.control-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.control-separator {
+  width: 1px;
+  height: 24px;
+  background: #ddd;
+  margin: 0 8px;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid;
+}
+
+.filter-button.apply-filter {
+  background: #ff9900;
+  color: white;
+  border-color: #e88600;
+}
+
+.filter-button.apply-filter:hover {
+  background: #e88600;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-button.clear-filter {
+  background: white;
+  color: #c45500;
+  border-color: #c45500;
+}
+
+.filter-button.clear-filter:hover {
+  background: #fff5f0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-status {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.filter-status.active {
+  background: #e7f4e7;
+  color: #067d62;
+  border: 1px solid #067d62;
+}
+
+.filter-status.inactive {
+  background: #f0f0f0;
+  color: #666;
+  border: 1px solid #ccc;
+}
+
+/* Sponsored toggle styling */
+.sponsored-toggle {
+  margin-left: auto;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  user-select: none;
+}
+
+.checkbox-container:hover {
+  color: #c45500;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #ff9900;
+}
+
+.checkbox-container span {
+  font-weight: 500;
+}
+
+/* Sponsored items hiding - removed the always-hide rules */
+.sponsored-hidden {
+  display: none !important;
+}

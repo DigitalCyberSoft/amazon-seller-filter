@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Seller Filter",
+  "version": "1.0",
+  "description": "Adds seller filter to Amazon search results and removes sponsored items",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.amazon.com/*",
+    "*://*.amazon.ca/*",
+    "*://*.amazon.co.uk/*",
+    "*://*.amazon.com.mx/*",
+    "*://*.amazon.com.br/*",
+    "*://*.amazon.fr/*",
+    "*://*.amazon.de/*",
+    "*://*.amazon.it/*",
+    "*://*.amazon.es/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.amazon.com/s*",
+        "*://*.amazon.ca/s*",
+        "*://*.amazon.co.uk/s*",
+        "*://*.amazon.com.mx/s*",
+        "*://*.amazon.com.br/s*",
+        "*://*.amazon.fr/s*",
+        "*://*.amazon.de/s*",
+        "*://*.amazon.it/s*",
+        "*://*.amazon.es/s*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
