@@ -2,6 +2,8 @@
 
 A Chrome browser extension that filters Amazon search results to show only items sold by Amazon and optionally hides sponsored products.
 
+📦 **[Download Latest Release](https://github.com/DigitalCyberSoft/amazon-seller-filter/releases/latest)** - Ready to install!
+
 ## Features
 
 - **Amazon-Only Filter**: Automatically adds Amazon's seller filter to search results
@@ -12,18 +14,36 @@ A Chrome browser extension that filters Amazon search results to show only items
 
 ## Installation
 
-### From Source (Developer Mode)
+### Method 1: Quick Install from Release (Recommended)
 
-1. Clone this repository or download the ZIP file
+1. **Download the extension:**
+   - Go to the [Releases page](https://github.com/DigitalCyberSoft/amazon-seller-filter/releases)
+   - Download the latest `amazon-seller-filter-v*.*.zip` file
+
+2. **Extract the ZIP file:**
+   - Right-click the downloaded ZIP file
+   - Select "Extract All" (Windows) or double-click (Mac)
+   - Choose a location you'll remember (e.g., Documents/Extensions/)
+
+3. **Install in Chrome:**
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Enable "Developer mode" using the toggle in the top right corner
+   - Click "Load unpacked"
+   - Select the folder where you extracted the ZIP file
+   - The extension is now installed and active!
+
+### Method 2: Install from Source
+
+1. Clone this repository or download the source code:
    ```bash
-   git clone https://github.com/yourusername/amazon-seller-filter.git
+   git clone https://github.com/DigitalCyberSoft/amazon-seller-filter.git
    ```
 
 2. Open Chrome and navigate to `chrome://extensions/`
 
 3. Enable "Developer mode" using the toggle in the top right corner
 
-4. Click "Load unpacked" and select the extension directory
+4. Click "Load unpacked" and select the cloned/downloaded folder
 
 5. The extension is now installed and active!
 
